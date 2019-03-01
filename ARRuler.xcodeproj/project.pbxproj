@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821878472226423300AD4CE5 /* ARDisplayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 821878462226423300AD4CE5 /* ARDisplayVC.m */; };
 		AD412D35221F8F600089648D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD412D34221F8F600089648D /* AppDelegate.m */; };
 		AD412D38221F8F600089648D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD412D37221F8F600089648D /* ViewController.m */; };
 		AD412D3B221F8F600089648D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD412D39221F8F600089648D /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		AD412D43221F8F620089648D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD412D42221F8F620089648D /* main.m */; };
 		AD412D4D221F8F620089648D /* ARRulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD412D4C221F8F620089648D /* ARRulerTests.m */; };
 		AD412D58221F8F620089648D /* ARRulerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD412D57221F8F620089648D /* ARRulerUITests.m */; };
+		AD412D67221F8F8A0089648D /* ARLine.m in Sources */ = {isa = PBXBuildFile; fileRef = AD412D66221F8F8A0089648D /* ARLine.m */; };
+		AD412D6A221FA03D0089648D /* ARRulerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD412D69221FA03D0089648D /* ARRulerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		821878452226423300AD4CE5 /* ARDisplayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARDisplayVC.h; sourceTree = "<group>"; };
+		821878462226423300AD4CE5 /* ARDisplayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDisplayVC.m; sourceTree = "<group>"; };
 		AD412D30221F8F600089648D /* ARRuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARRuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD412D33221F8F600089648D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD412D34221F8F600089648D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,10 @@
 		AD412D53221F8F620089648D /* ARRulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARRulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD412D57221F8F620089648D /* ARRulerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARRulerUITests.m; sourceTree = "<group>"; };
 		AD412D59221F8F620089648D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD412D65221F8F8A0089648D /* ARLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARLine.h; sourceTree = "<group>"; };
+		AD412D66221F8F8A0089648D /* ARLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLine.m; sourceTree = "<group>"; };
+		AD412D68221FA03D0089648D /* ARRulerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARRulerController.h; sourceTree = "<group>"; };
+		AD412D69221FA03D0089648D /* ARRulerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARRulerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,12 @@
 				AD412D3E221F8F620089648D /* LaunchScreen.storyboard */,
 				AD412D41221F8F620089648D /* Info.plist */,
 				AD412D42221F8F620089648D /* main.m */,
+				AD412D65221F8F8A0089648D /* ARLine.h */,
+				AD412D66221F8F8A0089648D /* ARLine.m */,
+				AD412D68221FA03D0089648D /* ARRulerController.h */,
+				AD412D69221FA03D0089648D /* ARRulerController.m */,
+				821878452226423300AD4CE5 /* ARDisplayVC.h */,
+				821878462226423300AD4CE5 /* ARDisplayVC.m */,
 			);
 			path = ARRuler;
 			sourceTree = "<group>";
@@ -264,6 +279,9 @@
 			files = (
 				AD412D38221F8F600089648D /* ViewController.m in Sources */,
 				AD412D43221F8F620089648D /* main.m in Sources */,
+				AD412D67221F8F8A0089648D /* ARLine.m in Sources */,
+				AD412D6A221FA03D0089648D /* ARRulerController.m in Sources */,
+				821878472226423300AD4CE5 /* ARDisplayVC.m in Sources */,
 				AD412D35221F8F600089648D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +454,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RM959B32M;
 				INFOPLIST_FILE = ARRuler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +472,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RM959B32M;
 				INFOPLIST_FILE = ARRuler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
